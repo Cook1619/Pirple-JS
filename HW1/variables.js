@@ -11,8 +11,9 @@ console.log(name);//Uncaught reference error
 let name =  "Matt";
 
 console.log("End of script");
-//When you use let or const is creates block scope {}, whereas is you used var inside of a function you would be able to access its value on the global scope. So by using let and const you can avoid a lot of program errors because it gives you better control of your variables. 
+//When you use let or const is creates block scope {}, whereas is you used var inside of a code block you would be able to access its value as long as its a sibling or child scoped variable. So by using let and const you can avoid a lot of program errors because it gives you better control of your variables. 
 //You would use const when you know the value of a variable will change overtime wheras with const you assign it to the variable whose values will not change. Not to be confused with objects and arrays, the values in the array and object can change, just not the name your referencing it with.
+//Hoisting refers to the execution context of the program, it can be thought of as declarations physically being moved to the top of your file, but in reality hoisting deals with the organization of the memory during the compliation process of the code, meaning when the browser interpets your code
 
 const person = {
     name: "Matt",
